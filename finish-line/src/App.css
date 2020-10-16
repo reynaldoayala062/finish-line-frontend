@@ -1,0 +1,115 @@
+.container {
+  padding: 2px 16px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.home-container {
+  padding: 2px 16px;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  background-color: #5680E9;
+  padding: 3%;
+  border-radius: 25px;
+}
+
+.home {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 120%;
+  background-color: white;
+  padding: 10%;
+  border-radius: 25px;
+}
+
+.app-container {
+  background-color: #e3e5ee;
+}
+
+h2, h5 {
+  color: white
+}
+
+a {
+  color: white;
+  margin: 2px;
+  padding: 2px;
+}
+
+label{
+  color: rgb(12, 12, 12)
+}
+
+.errorMsg {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.project-container {
+  padding: 2px 16px;
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 35%
+}
+
+.view-project {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 200%;
+  width: 200%;
+  background-color: azure;
+  padding: 10%;
+  border-radius: 25px;
+}
+
+img {
+  width: 50%
+}
+
+.anime {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.task-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.project-card {
+  padding: 10px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+/* #8860D0
+#C1C8E4
+#5AB9EA
+#84CEEB
+#5680E9 */
+
+
