@@ -25,7 +25,7 @@ class Task extends React.Component {
             <div className="task-container">
                 <BootstrapTable data={itemDatas} cellEdit={ cellEditProp } deleteRow={ true } selectRow={ { mode: 'radio' } } options={ { onDeleteRow: this.onDeleteRow } } striped hover > 
                             <TableHeaderColumn isKey={true} dataField='id' dataAlign='left' width='0' >Id</TableHeaderColumn>
-                            <TableHeaderColumn dataField='name' dataAlign='left' width='40' >Task</TableHeaderColumn>
+                            <TableHeaderColumn dataField='title' dataAlign='left' width='40' >Task</TableHeaderColumn>
                             <TableHeaderColumn dataField='comment' dataSort={true} headerAlign='right' dataAlign='right' width='80' >Comment</TableHeaderColumn>
                 </BootstrapTable>
             </div>

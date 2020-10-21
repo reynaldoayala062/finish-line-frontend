@@ -28,14 +28,14 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="ui secondary  menu">
-          <a className="active item">
+          <a className="item">
           <NavLink to="/home">Home</NavLink>
           </a>
           <a className="item">
-          <NavLink to="/view">Projects</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
           </a>
           <a className="item" >
-          <NavLink to="/calander">Calander</NavLink>
+          <NavLink to="/calendar">Calendar</NavLink>
           </a>
           <div className="right menu">
             <div className="item">

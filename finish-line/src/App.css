@@ -10,7 +10,7 @@
   padding: 2px 16px;
   position: absolute;
   top: 50%;
-  left: 47%;
+  left: 45%;
   transform: translate(-50%, -50%);
 }
 
@@ -59,7 +59,7 @@ label{
   padding: 2px 16px;
   position: absolute;
   top: 55%;
-  left: 35%;
+  left: 33%;
   transform: translate(-50%, -50%);
   width: 35%
 }
@@ -104,7 +104,51 @@ img {
   justify-content: space-around;
 }
 
+.calendar-container {
+  padding: 100px;
+  background-color: #84CEEB;
+}
 
+.calendar {
+  background-color:  #5AB9EA;
+  border-radius: 25px;
+  padding: 50px;
+  height: 50px;
+}
+
+.filler {
+  background-color:  white;
+  border-radius: 25px;
+  padding: 50px;
+  height: 1100px;
+}
+
+.add-button:focus, .add-button:hover {
+  animation: wobble 1s 1;
+}
+
+.delete-button:focus, .delete-button:hover {
+  animation: wobble 1s 1;
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+h1 {
+  font-size:  200px;
+}
 
 /* #8860D0
 #C1C8E4

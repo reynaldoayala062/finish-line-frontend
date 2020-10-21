@@ -7,7 +7,6 @@ class ProjectForm extends React.Component {
         name: "",
         image: "",
         description: "",
-        color: "red",
         user_id: localStorage.getItem('user_id')
     }
 
@@ -31,6 +30,7 @@ class ProjectForm extends React.Component {
         .then(projectObj => {
             this.props.handleNewProject(projectObj)
         })
+
     }
     
     render() {

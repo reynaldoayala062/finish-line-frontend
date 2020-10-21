@@ -21,9 +21,7 @@ class ProjectContainer extends React.Component {
             this.setState({
                 projects: userProjects
             })
-        }
-            
-        )
+        })
     }
 
     handleNewProject = (project) => {
@@ -44,22 +42,27 @@ class ProjectContainer extends React.Component {
         this.setState({
             projects: newProjectArray
         })
+
+        this.handleProjectDelete(id)
+    }
+
+    handleProjectDelete = (id) => {
+        this.props.handleDeleteProject(id)
     }
 
 
     render() {
-        console.log(this.state.projects)
         return (
             <div className="project-container">
                 <div className="view-project">
                     <ScrollArea 
-                    height="465px"
-                    width="500"
+                    height="550px"
+                    width="2000"
                     trackHidden>
                         <h1> Create Project </h1>
                         <ProjectForm handleNewProject={this.handleNewProject} />
                         <br/>
-                        {this.state.projects.map(project => <ProjectCard key={project.id} project={project} handleDelete={this.handleDelete} />)}
+                        {this.state.projects.map(project => <ProjectCard key={project.id} project={project} handleDelete={this.handleDelete} handleNewTask={this.props.handleNewTask} handleEditTask={this.props.handleEditTask} handleDeleteTask={this.props.handleDeleteTask} />)}
                     </ScrollArea>
                 </div>
             </div>
